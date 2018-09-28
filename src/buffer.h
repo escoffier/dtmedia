@@ -1,4 +1,5 @@
-#pragma once
+#ifndef __BUFFER__
+#define __BUFFER__
 
 #include <map>
 #include <memory>
@@ -24,3 +25,4 @@ private:
   std::map<std::string, PktSender> senders_;
   std::mutex destsmutex_;
 };
+#endif // !__BUFFER__
